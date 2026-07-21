@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Ferramentas Correição">
+<meta name="theme-color" content="#152F44">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAAEmklEQVR4nO3cwVHkQAxGYbFFCsSxSWwYnDkQEAfOBLqHraJcw9jr8S+ppe73BcAM7kdbzYCfXn7/MeCqX6PfAHojIEgICBICgoSAICEgSAgIEgKChIAgISBICAgSAoKEgCAhIEgICBICgoSAICEgSAgIEgKChIAgISBICAiS5/yXfP98zX/RdXy8fWW+3FPaPxbSTbKckjICIp2BojMKn4GoZ6zo6x8bEPVUELoKgQFRTx1xaxE1Ax2/4+STwjryL3tIQHvfBt2kSVsC/1sY9VSwd7Xd72XOAVFPHTkNZXyUQT2jJFx5z4Dupk09Y929/o6bUOwORD0VhK4Cn8ZD4hYQvzbsxWu9Ancg7l91xK0FtzBICAgSAoKEgCAhIEgICBICgoSAICEgSAgIEgKChIAgISBICAgSAoKEgCAhIEgICBICqqjRH5gTUDn/6unSEAHVsu2mRUMEVNr752vxjAiokL1WKjdEQFUcV1K2IQIq4UwfNRsioPHOl1FwJCKgwS4EUaohAuqn1EMHCGikC3tJqXqMgAaaoB4joFFKzTEKAhrgWj0Ftx8joHwz1WME1ELZeoyAks0xOG8RUJ756jECSjPNsesGAWWYbHDeIqBwE9djBFRTl3qMgKJNOThvEVCg6esxAooz67HrBgGFmHtw3iIgf+vUYwRURNN6jIDcrTA4bxGQp9XqMQJytMix6wYB+VhqcN4iIAfL1mMENMoc9RgB6RYcnLcISLJ4PUZAijWPXTcI6KKVB+et3gGN2gOo51vjgHo9zXTKeqxvQAOfZsrgvNUyoJ9LmNYQ9dzoF9DAR5l2uV1mahbQwEeZMjjf1SmggY8ypZ49bQJ66FGmoe/kpBXqsS4BPdqEb0MMzgcaBHStBq+GqOdYg4Aur4feUJG7YWUNArJBDTE4n9EjIEtviHpOahOQDb2XnbFgPdYrIMtaJAbn85oFZFeXKvTXSMvWYx0DssiGOHY9qmVAFtMQg/MFXQMy74ao55rGAVn8PBTx6pPpHZA5NcTgfFn7gExuiHoUMwRkQkMcu0STBGSJuwLbz9Y8AeWgnhtTBRS9utTz01QBWeQaU89dswVkMStNPXsmDMhY70RzBmSuDZHjgWkDMqeFp55jMwdk8vJTz39NHpAJEVDPGfMHZJdSoJ6TlgjICCLMKgHZIw1R23kLBWTnyqCeh6wVkB328fH2RT2PWi4g2wmFdK55Hv0GhqEYFyvuQHBEQJAQECQEBAkBQUJAkBAQJAQECQFBQkCQEBAkBAQJAUFCQJAQECQEBAkBQUJAkAQGxOMH64hbC7eA+BPjXrzWi1sYJLEBcRerIHQVPAO6uyvS0Fh3r7/jvJFxC6OhURKuvHNAe2nTUL69a+573PHfgWiogpx6zOzp5fcf36/4z3EunPmD5F/2qICMLaeYoB/awCGabaaOuLWIPYXRUAWhqxB+jKehsaKvf+AMdIORKFnOj25eQN8oKVTylj8gIMyET+MhISBICAgSAoKEgCAhIEgICBICgoSAICEgSAgIEgKChIAgISBICAgSAoKEgCAhIEgICBICgoSAICEgSP4CgqGGWuTVEC4AAAAASUVORK5CYII=">
+<title>Ferramentas de Correição</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap');
+
+:root{
+  --bg:#EEF1EF;
+  --ink:#16232E;
+  --ink-soft:#5B6B74;
+  --primary:#234E70;
+  --primary-dark:#152F44;
+  --line:#DBE1DD;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  min-height:100vh;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'IBM Plex Sans',sans-serif;
+  display:flex;
+  flex-direction:column;
+}
+header{
+  background:var(--primary-dark);
+  color:#fff;
+  padding:32px 20px 28px;
+  text-align:center;
+}
+header .eyebrow{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:#9FC0D6;
+  margin-bottom:6px;
+}
+header h1{
+  font-family:'Source Serif 4',serif;
+  font-size:22px;
+  margin:0;
+}
+main{
+  flex:1;
+  max-width:520px;
+  width:100%;
+  margin:0 auto;
+  padding:28px 18px 40px;
+}
+.tool-card{
+  display:block;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:22px 20px;
+  margin-bottom:18px;
+  text-decoration:none;
+  color:inherit;
+  box-shadow:0 1px 3px rgba(0,0,0,.04);
+}
+.tool-card .tool-num{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  color:var(--primary);
+  background:#E8EFF3;
+  display:inline-block;
+  padding:3px 9px;
+  border-radius:6px;
+  margin-bottom:12px;
+}
+.tool-card h2{
+  font-family:'Source Serif 4',serif;
+  font-size:18px;
+  margin:0 0 6px;
+  color:var(--primary-dark);
+}
+.tool-card p{
+  font-size:13px;
+  color:var(--ink-soft);
+  margin:0 0 14px;
+  line-height:1.5;
+}
+.tool-card .go{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:13px;
+  font-weight:600;
+  color:var(--primary);
+}
+.tool-card .go .arrow{
+  transition:transform .15s ease;
+}
+.tool-card:active .go .arrow{
+  transform:translateX(3px);
+}
+footer{
+  text-align:center;
+  font-size:11px;
+  color:var(--ink-soft);
+  padding:0 20px 24px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Corregedoria Geral da Justiça · ES</div>
+  <h1>Ferramentas de Correição</h1>
+</header>
+
+<main>
+  <a class="tool-card" href="https://lfsantocor.github.io/checklistpredial/">
+    <span class="tool-num">01</span>
+    <h2>Checklist de Inspeção Predial</h2>
+    <p>Preenchimento do checklist físico do fórum durante a visita, com geração de relatório em PDF, DOCX e registro fotográfico.</p>
+    <span class="go">Acessar ferramenta <span class="arrow">→</span></span>
+  </a>
+
+  <a class="tool-card" href="__URL_TERMO_VISITA__">
+    <span class="tool-num">02</span>
+    <h2>Termo de Visita e Correição</h2>
+    <p>Geração do termo assinado pela equipe ao final da visita à serventia, com exportação em PDF pronto para compartilhar.</p>
+    <span class="go">Acessar ferramenta <span class="arrow">→</span></span>
+  </a>
+</main>
+
+<footer>
+  Portal interno · atualize os links deste arquivo sempre que publicar uma nova ferramenta
+</footer>
+
+</body>
+</html>
