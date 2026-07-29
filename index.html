@@ -6,143 +6,102 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Ferramentas Correição">
-<meta name="theme-color" content="#152F44">
+<meta name="theme-color" content="#152238">
 <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAAEmklEQVR4nO3cwVHkQAxGYbFFCsSxSWwYnDkQEAfOBLqHraJcw9jr8S+ppe73BcAM7kdbzYCfXn7/MeCqX6PfAHojIEgICBICgoSAICEgSAgIEgKChIAgISBICAgSAoKEgCAhIEgICBICgoSAICEgSAgIEgKChIAgISBICAiS5/yXfP98zX/RdXy8fWW+3FPaPxbSTbKckjICIp2BojMKn4GoZ6zo6x8bEPVUELoKgQFRTx1xaxE1Ax2/4+STwjryL3tIQHvfBt2kSVsC/1sY9VSwd7Xd72XOAVFPHTkNZXyUQT2jJFx5z4Dupk09Y929/o6bUOwORD0VhK4Cn8ZD4hYQvzbsxWu9Ancg7l91xK0FtzBICAgSAoKEgCAhIEgICBICgoSAICEgSAgIEgKChIAgISBICAgSAoKEgCAhIEgICBICqqjRH5gTUDn/6unSEAHVsu2mRUMEVNr752vxjAiokL1WKjdEQFUcV1K2IQIq4UwfNRsioPHOl1FwJCKgwS4EUaohAuqn1EMHCGikC3tJqXqMgAaaoB4joFFKzTEKAhrgWj0Ftx8joHwz1WME1ELZeoyAks0xOG8RUJ756jECSjPNsesGAWWYbHDeIqBwE9djBFRTl3qMgKJNOThvEVCg6esxAooz67HrBgGFmHtw3iIgf+vUYwRURNN6jIDcrTA4bxGQp9XqMQJytMix6wYB+VhqcN4iIAfL1mMENMoc9RgB6RYcnLcISLJ4PUZAijWPXTcI6KKVB+et3gGN2gOo51vjgHo9zXTKeqxvQAOfZsrgvNUyoJ9LmNYQ9dzoF9DAR5l2uV1mahbQwEeZMjjf1SmggY8ypZ49bQJ66FGmoe/kpBXqsS4BPdqEb0MMzgcaBHStBq+GqOdYg4Aur4feUJG7YWUNArJBDTE4n9EjIEtviHpOahOQDb2XnbFgPdYrIMtaJAbn85oFZFeXKvTXSMvWYx0DssiGOHY9qmVAFtMQg/MFXQMy74ao55rGAVn8PBTx6pPpHZA5NcTgfFn7gExuiHoUMwRkQkMcu0STBGSJuwLbz9Y8AeWgnhtTBRS9utTz01QBWeQaU89dswVkMStNPXsmDMhY70RzBmSuDZHjgWkDMqeFp55jMwdk8vJTz39NHpAJEVDPGfMHZJdSoJ6TlgjICCLMKgHZIw1R23kLBWTnyqCeh6wVkB328fH2RT2PWi4g2wmFdK55Hv0GhqEYFyvuQHBEQJAQECQEBAkBQUJAkBAQJAQECQFBQkCQEBAkBAQJAUFCQJAQECQEBAkBQUJAkAQGxOMH64hbC7eA+BPjXrzWi1sYJLEBcRerIHQVPAO6uyvS0Fh3r7/jvJFxC6OhURKuvHNAe2nTUL69a+573PHfgWiogpx6zOzp5fcf36/4z3EunPmD5F/2qICMLaeYoB/awCGabaaOuLWIPYXRUAWhqxB+jKehsaKvf+AMdIORKFnOj25eQN8oKVTylj8gIMyET+MhISBICAgSAoKEgCAhIEgICBICgoSAICEgSAgIEgKChIAgISBICAgSAoKEgCAhIEgICBICgoSAICEgSP4CgqGGWuTVEC4AAAAASUVORK5CYII=">
 <title>Ferramentas de Correição</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap');
-
-:root{
-  --bg:#EEF1EF;
-  --ink:#16232E;
-  --ink-soft:#5B6B74;
-  --primary:#234E70;
-  --primary-dark:#152F44;
-  --line:#DBE1DD;
-}
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap');
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;}
-body{
-  min-height:100vh;
-  background:var(--bg);
-  color:var(--ink);
-  font-family:'IBM Plex Sans',sans-serif;
-  display:flex;
-  flex-direction:column;
-}
-header{
-  background:var(--primary-dark);
-  color:#fff;
-  padding:32px 20px 28px;
-  text-align:center;
-}
-header .eyebrow{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:11px;
-  letter-spacing:.06em;
-  text-transform:uppercase;
-  color:#9FC0D6;
-  margin-bottom:6px;
-}
-header h1{
-  font-family:'Source Serif 4',serif;
-  font-size:22px;
-  margin:0;
-}
-main{
-  flex:1;
-  max-width:520px;
-  width:100%;
-  margin:0 auto;
-  padding:28px 18px 40px;
-}
-.tool-card{
-  display:block;
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:14px;
-  padding:22px 20px;
-  margin-bottom:18px;
-  text-decoration:none;
-  color:inherit;
-  box-shadow:0 1px 3px rgba(0,0,0,.04);
-}
-.tool-card .tool-num{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:11px;
-  color:var(--primary);
-  background:#E8EFF3;
-  display:inline-block;
-  padding:3px 9px;
-  border-radius:6px;
-  margin-bottom:12px;
-}
-.tool-card h2{
-  font-family:'Source Serif 4',serif;
-  font-size:18px;
-  margin:0 0 6px;
-  color:var(--primary-dark);
-}
-.tool-card p{
-  font-size:13px;
-  color:var(--ink-soft);
-  margin:0 0 14px;
-  line-height:1.5;
-}
-.tool-card .go{
-  display:inline-flex;
-  align-items:center;
-  gap:6px;
-  font-size:13px;
-  font-weight:600;
-  color:var(--primary);
-}
-.tool-card .go .arrow{
-  transition:transform .15s ease;
-}
-.tool-card:active .go .arrow{
-  transform:translateX(3px);
-}
-footer{
-  text-align:center;
-  font-size:11px;
-  color:var(--ink-soft);
-  padding:0 20px 24px;
-}
+body{background:#EEF0F3;}
+a{color:#1F4E79;text-decoration:none;}
+a:hover{color:#16385A;}
 </style>
 </head>
 <body>
+<div style="min-height:100vh;display:flex;flex-direction:column;font-family:'IBM Plex Sans',sans-serif;color:#16232E;background:#EEF0F3;">
 
-<header>
-  <div class="eyebrow">Corregedoria Geral da Justiça · ES</div>
-  <h1>Ferramentas de Correição</h1>
-</header>
+  <div style="background:linear-gradient(180deg,#1B3A5C 0%,#152238 100%);padding:calc(env(safe-area-inset-top,0px) + 22px) 20px 26px;display:flex;align-items:center;gap:14px;box-shadow:0 2px 8px rgba(10,20,35,.12);position:relative;">
+    <div style="flex:none;width:52px;height:52px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;">
+      <img src="data:image/png;base64,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" alt="Brasão TJES" style="width:30px;height:36px;object-fit:contain;">
+    </div>
+    <div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8FAFC9;margin-bottom:4px;">Corregedoria · Correição Extrajudicial</div>
+      <div style="font-family:'Source Serif 4',serif;font-size:20px;font-weight:700;color:#fff;line-height:1.25;">Ferramentas de Correição</div>
+    </div>
+    <div style="position:absolute;left:0;right:0;bottom:-3px;height:3px;background:#E7A9C6;"></div>
+  </div>
 
-<main>
-  <a class="tool-card" href="https://lfsantocor.github.io/checklistpredial/">
-    <h2>Inspeção Predial</h2>
-  </a>
+  <main style="flex:1;max-width:560px;width:100%;margin:0 auto;padding:22px 16px 40px;box-sizing:border-box;">
 
-  <a class="tool-card" href="https://lfsantocor.github.io/termodevisita/">
-    <h2>Termo de Visita e Correição</h2>
-  </a>
+    <div style="display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:112px;gap:12px;">
 
-  <a class="tool-card" href="https://lfsantocor.github.io/checklisttabelionato/">
-    <h2>Tabelionato de Notas</h2>
-  </a>
+      <a href="https://lfsantocor.github.io/checklistpredial/" style="grid-column:1 / 2;grid-row:1 / 4;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(150deg,#1B3A5C 0%,#152238 100%);border-radius:20px;padding:20px 18px;text-decoration:none;color:inherit;box-shadow:0 6px 16px rgba(21,34,56,.22);">
+        <svg width="120" height="120" viewBox="0 0 24 24" fill="none" style="position:absolute;right:-24px;bottom:-24px;opacity:.09;">
+          <path d="M6 20V6a1 1 0 011-1h6a1 1 0 011 1v14" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/>
+          <path d="M14 11h4a1 1 0 011 1v8" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/>
+          <path d="M3 20h18" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        <div style="width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 20V6a1 1 0 011-1h6a1 1 0 011 1v14" stroke="#7FC9A0" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M14 11h4a1 1 0 011 1v8" stroke="#7FC9A0" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M9 8h0M9 11h0M9 14h0" stroke="#7FC9A0" stroke-width="2" stroke-linecap="round"/>
+            <path d="M3 20h18" stroke="#7FC9A0" stroke-width="1.6" stroke-linecap="round"/>
+            <circle cx="17" cy="6" r="3" stroke="#7FC9A0" stroke-width="1.6"/>
+            <path d="M19.2 8.2L21 10" stroke="#7FC9A0" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div style="position:relative;">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:#9FC0D6;margin-bottom:6px;">Fóruns</div>
+          <div style="font-family:'Source Serif 4',serif;font-size:19px;font-weight:700;color:#fff;line-height:1.2;">Inspeção Predial</div>
+        </div>
+      </a>
 
-  <a class="tool-card" href="https://lfsantocor.github.io/checklistrctn/">
-    <h2>RCTN</h2>
-  </a>
+      <a href="https://lfsantocor.github.io/termodevisita/" style="grid-column:2 / 3;grid-row:1 / 2;display:flex;flex-direction:column;justify-content:space-between;background:#EDE7F1;border-radius:18px;padding:16px;text-decoration:none;color:inherit;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M6 3h9l3 3v15a1 1 0 01-1 1H6a1 1 0 01-1-1V4a1 1 0 011-1z" stroke="#6E4E8C" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M9 11l2 2 4-4" stroke="#6E4E8C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:#8570A0;margin-bottom:4px;">Termo</div>
+          <div style="font-family:'Source Serif 4',serif;font-size:14.5px;font-weight:700;color:#152238;line-height:1.25;">Termo de Visita e Correição</div>
+        </div>
+      </a>
 
-  <a class="tool-card" href="https://lfsantocor.github.io/checklist1oficio/">
-    <h2>1º Ofício</h2>
-  </a>
-</main>
+      <div style="grid-column:2 / 3;grid-row:2 / 4;display:flex;flex-direction:column;gap:6px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:#3E6FA0;padding:0 2px;">Checklist extrajudicial</div>
+        <a href="https://lfsantocor.github.io/checklisttabelionato/" style="flex:1;display:flex;align-items:center;gap:12px;background:#DCEAF7;border-radius:18px;padding:14px 16px;text-decoration:none;color:inherit;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="flex:none;">
+            <rect x="4" y="4" width="16" height="16" rx="2" stroke="#2A5F94" stroke-width="1.6"/>
+            <path d="M8 9h8M8 12h8M8 15h5" stroke="#2A5F94" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <div style="font-family:'Source Serif 4',serif;font-size:14px;font-weight:700;color:#152238;line-height:1.25;">Tabelionato de Notas</div>
+        </a>
+        <a href="https://lfsantocor.github.io/checklistrctn/" style="flex:1;display:flex;align-items:center;gap:12px;background:#DCEAF7;border-radius:18px;padding:14px 16px;text-decoration:none;color:inherit;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="flex:none;">
+            <path d="M4 6a1 1 0 011-1h10l4 4v9a1 1 0 01-1 1H5a1 1 0 01-1-1V6z" stroke="#2A5F94" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M15 5v4h4" stroke="#2A5F94" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M8 13h6M8 16h4" stroke="#2A5F94" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <div style="font-family:'Source Serif 4',serif;font-size:15px;font-weight:700;color:#152238;">RCTN</div>
+        </a>
+        <a href="https://lfsantocor.github.io/checklist1oficio/" style="flex:1;display:flex;align-items:center;gap:12px;background:#DCEAF7;border-radius:18px;padding:14px 16px;text-decoration:none;color:inherit;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="flex:none;">
+            <path d="M12 3v13" stroke="#2A5F94" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M4 6h16M4 6l-2.5 5a3 3 0 006 0L5 6M20 6l-2.5 5a3 3 0 006 0L21 6" stroke="#2A5F94" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 20h8" stroke="#2A5F94" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <div style="font-family:'Source Serif 4',serif;font-size:15px;font-weight:700;color:#152238;">1º Ofício</div>
+        </a>
+      </div>
 
-<footer>
-  Portal interno · atualize os links deste arquivo sempre que publicar uma nova ferramenta
-</footer>
+    </div>
+  </main>
 
+  <div style="text-align:center;font-size:11.5px;color:#5B6B74;padding:0 20px calc(env(safe-area-inset-bottom,0px) + 20px);">
+    Portal interno · atualize os links deste arquivo sempre que publicar uma nova ferramenta
+  </div>
+</div>
 </body>
 </html>
